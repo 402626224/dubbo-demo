@@ -1,0 +1,17 @@
+server:
+  port: 9090
+dubbo:
+  application:
+    name: dubbo-demo-consumer
+    id: dubbo-demo-consumer
+  protocol:
+    name: dubbo
+    port: 20881
+    id: dubbo
+  registry:
+    address: zookeeper://10.1.100.98:2181
+  provider:
+    accesslog: true
+demo:
+  service:
+    version: 0
